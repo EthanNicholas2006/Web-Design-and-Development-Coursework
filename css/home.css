@@ -1,0 +1,63 @@
+/* General Styles */
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: var(--font-family);
+  background: url("/assets/BG.jpeg") no-repeat center / cover;
+  color: var(--text-color);
+  text-align: center;
+}
+
+
+/* Hero Section */
+.hero {
+  margin-top: 70px;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  padding: 100px 20px;
+  background: rgba(9, 105, 4, 0.426);
+  color:white;
+  backdrop-filter: blur(6px);
+}
+
+.hero h1 {
+  font-size: 2.5em;
+}
+
+.hero p {
+  font-size: 1.2em;
+  opacity: 0.9;
+}
+
+/* Content Tiles */
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  opacity: 0.7;
+  gap: 20px;
+  padding: 20px;
+  margin: auto;
+}
+
+.tile {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  min-width: 200px;
+  min-height: 200px;
+}
+
+.tile:hover {
+  transform: scale(1.05);
+}
+
+.tile img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+
